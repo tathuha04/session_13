@@ -12,9 +12,13 @@
 
 </body>
 <script>
+    //khai báo mảng x và khởi tạo các phần tử trong mảng
     let x = [-3, 5, 1, 3, 2, 10];
+    //duyệt từ phần tử đầu tiên trong mảng
     let first = 0;
+    //duyệt từ phần tử cuối cùng trong mảnh
     let last = x.length - 1;
+    //Dùng vòng lặp chạy với điều kiện first < last,
 
     while (first < last) {
         let b = x[first];
@@ -23,7 +27,7 @@
         first++;
         last--;
     }
-    document.write(x);
+    document.write(x); //in ra mảng sau khi đảo ngược
 
 </script>
 
