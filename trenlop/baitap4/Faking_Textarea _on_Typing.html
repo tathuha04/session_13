@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Faking Textarea on Typing</h2>
+
+    <textarea name="Typingtext" id="" cols="10" rows="50" onchange="typingtext()"></textarea>
+
+    <script>
+        //lấy ra selector
+        document.getElementById("typingtext").innerHTML = "";
+
+        let textDefault = "";
+        let textDefaultbreak = textDefault.split("");
+        console.log(textDefaultbreak);
+        let count = 0;
+        let test ="";
+        console.log(textDefaultbreak.length);
+        function typingtext(){
+           console.log(count){
+            if (count<5){
+                text += textDefaultbreak[count] +" ";
+                count++;
+            }else{
+                text = "";
+                
+            }
+           }
+        }
+    </script>
+</body>
+</html>
