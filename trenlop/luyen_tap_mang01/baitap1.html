@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khởi tạo mạng số nguyên gồm 10 phần tử</title>
+</head>
+
+<body>
+    <script>
+        let count = 0;  //biến để lưu trữ số lượng phần tử tmdk
+
+        let num = [1, 2, 3, 5, 7, 8, 10, 14, 20, 25];  // khai báo mảng gồm 10 số nguyên 
+        for (let i = 0; i < num.length; i++) { //khởi tạo biến i
+            console.log(num[i]) //hiển thị phần tử của mảng 'num' 
+            if (num[i] >= 10) {  // num[i] : phần tử thứ i của mảng 'num'
+                count = count + 1  // tăng số lượng biến lưu trữ +1
+                document.write(num[i] + " "); //in ra màn hình số >=10
+                document.write("<br>")
+            }
+        }
+        document.write("Số lượng " + count); //in ra màn hình số lương số lớn hơn 10
+    </script>
+</body>
+
+</html>

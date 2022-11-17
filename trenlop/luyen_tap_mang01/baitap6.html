@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào mảng số nguyên gồm 10pt,tạo ptu số nguyên V. Tìm xem V có nằm trong mảng số nguyên không?
+        Nếu thuộc in "V í in the array" , nếu không in "V í not in the array."
+    </title>
+</head>
+
+<body>
+    <script>
+        // Khai bao mang theo de bai
+        let numArr = [43, 732, 9, 5674, -65, 8, -34];
+
+        // Nhap vao so nguyen v
+        let v = prompt("nhập phần tử số nguyên V:");
+
+        // kiem tra so
+        let count = 0;
+
+        for (const numb of numArr) {
+            // Kiem tra xem số nhập vào có nằm trong mảng ko
+            if (numb == v) {
+                // Neu co thi in ra ...
+                document.write("số " + v + " có nằm trong mảng đã cho");
+                count = count + 1;
+            }
+        }
+
+        if (count == 0) {
+            // Nguoc lai neu ko co thi in ra ...
+            document.write("số " + v + " không nằm trong mảng đã cho");
+        }
+    </script>
+</body>
+
+</html>

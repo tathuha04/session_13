@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào 10 phần tử.tạo ptu số nguyên V.
+        kiểm tra v có thuộc mảng không,nếu thuộc thì xoá V khỏi mảng
+        (dịch phần tử bên phải V sang vtri V, và gán 0 cho phần tử cuối cùng của mảng)
+    </title>
+</head>
+
+<body>
+    <script>
+        let num = [2, 23, 54, 765, 45, 213, 98, 45, 5, 4];
+        let v = prompt("Nhập số nguyên V:");
+        for(let i=0;i<num.length;i++){
+            if(v==num[i]){
+               num.splice([i],1)
+              document.write(num);
+            }
+            else{
+            }
+        }
+        document.write("số đã nhập không thuộc mảng đã cho!!");
+
+      
+        
+
+    </script>
+</body>
+
+</html>

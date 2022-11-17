@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khởi tạo mảng số nguyên.Hiển thị giá trị lớn nhất trong mảng.in ra giá trị trung bình của các phần tử trong
+        mảng</title>
+</head>
+
+<body>
+    <script>
+        let num = [19, 23, 45, 654, 3, 53, 32, 76, 64];
+        let max = 0;
+        let tong = 0;
+        let mean = 0;
+
+
+
+        for (let i = 0; i < num.length; i++) {
+            if (max < num[i]) {
+                max = num[i];
+            }
+            tong += num[i];
+            mean = tong / num.length;
+        }
+        document.write(max + " " +"<br>");
+        document.write(mean + " ");
+
+    </script>
+</body>
+
+</html>

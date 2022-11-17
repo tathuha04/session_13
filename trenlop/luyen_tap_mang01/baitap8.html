@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Nhập mảng gồm 10 ptu, sắp xếp mảng theo thứ tự
+        giảm dần & hiển thị ra mảng đã được sắp xếp </title>
+</head>
+
+<body>
+    <script>
+        let num = [55, 4, 22, 11, 17, 20, 22, 86, 8, 24];
+
+        for (i = 0; i < num.length; i++) {
+            num.sort(function (a, b) { return b - a });
+        }
+        document.write(num);
+        </script>
+</body>
+
+</html>
