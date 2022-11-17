@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Simple Dictionary</h1>
+    <input type="text" id="text" placeholder="nhap">
+    <button onclick="timkiem()">search</button>
+    <h3 id="result"></h3>
+
+
+
+
+
+</body>
+<script>
+    function timkiem() {
+        let text = document.getElementById("text").value;
+        let result = "";
+        let arrayENG = ["Green", "black", "Watermelon", "pear", "sleep", "promenade"];
+        let arrayVIE = ["màu xanh lá cây", "màu đen", "dưa hấu", "lê", "ngủ", "đi dạo,đi chơi"];
+
+        for (let i = 0; i < arrayENG.length; i++) {
+            if (text == arrayENG[i]) {
+                result = arrayVIE[i];
+                document.getElementById("result").innerHTML = result;
+                break;
+
+            } else {
+                document.getElementById("result").innerHTML = "khong tim thay";
+            }
+        }
+    } 
+</script>
+
+</html>
